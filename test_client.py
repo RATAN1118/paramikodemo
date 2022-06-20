@@ -20,7 +20,7 @@ def test_operation():
         TimeStamp = str(TimeStamp).replace(r"\n", "")
         x = re.findall("\d{2}", cmd_output)
         value = int(x[0])
-        assert value < 80
+        assert value < 90
 
         with open(output_file, "a+") as file:
             file.write("\n" + "TimeStamp" + "\t" + "file name" + "\t" + "percentage")
