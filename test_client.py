@@ -13,7 +13,7 @@ def connection():
     client = paramiko.SSHClient()
     client.load_system_host_keys()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    client.connect(hostname="192.168.43.166", port=22, username="node1", password="Rk@8531")
+    client.connect(hostname="192.168.170.104", port=22, username="node1", password="Rk@8531")
     yield
     client.close()
 
